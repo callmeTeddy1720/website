@@ -1,0 +1,44 @@
+/* Custom styles for portfolio enhancements */
+
+/* Glassmorphism card effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Gradient text for hero */
+.gradient-text {
+  background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Button shadow and hover */
+.btn-shadow {
+  box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.15);
+  transition: box-shadow 0.2s;
+}
+.btn-shadow:hover {
+  box-shadow: 0 8px 24px 0 rgba(37, 99, 235, 0.25);
+}
+
+/* Section fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.section-animate {
+  animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
